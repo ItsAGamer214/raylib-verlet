@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: verlet
+# Project: raylib-verlet
 # Configurations: Debug
 # =============================================================================
 
@@ -41,42 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target verlet
+# Object build statements for EXECUTABLE target raylib-verlet
 
 
 #############################################
-# Order-only phony target for verlet
+# Order-only phony target for raylib-verlet
 
-build cmake_object_order_depends_target_verlet: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib
+build cmake_object_order_depends_target_raylib-verlet: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib
 
-build CMakeFiles/verlet.dir/sources/main.c.obj: C_COMPILER__verlet_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/sources/main.c || cmake_object_order_depends_target_verlet
+build CMakeFiles/raylib-verlet.dir/sources/main.c.obj: C_COMPILER__raylib-verlet_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/sources/main.c || cmake_object_order_depends_target_raylib-verlet
   DEFINES = -DASSETS_PATH=\"D:/Intellij/Projects/raylib-verlet/assets/\" -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
-  DEP_FILE = CMakeFiles\verlet.dir\sources\main.c.obj.d
+  DEP_FILE = CMakeFiles\raylib-verlet.dir\sources\main.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/sources -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
-  OBJECT_DIR = CMakeFiles\verlet.dir
-  OBJECT_FILE_DIR = CMakeFiles\verlet.dir\sources
-  TARGET_COMPILE_PDB = CMakeFiles\verlet.dir\
-  TARGET_PDB = verlet.pdb
+  OBJECT_DIR = CMakeFiles\raylib-verlet.dir
+  OBJECT_FILE_DIR = CMakeFiles\raylib-verlet.dir\sources
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target verlet
+# Link build statements for EXECUTABLE target raylib-verlet
 
 
 #############################################
-# Link the executable verlet.exe
+# Link the executable raylib-verlet.exe
 
-build verlet.exe: C_EXECUTABLE_LINKER__verlet_Debug CMakeFiles/verlet.dir/sources/main.c.obj | _deps/raylib-build/raylib/libraylib.a || _deps/raylib-build/raylib/external/glfw/src/glfw _deps/raylib-build/raylib/libraylib.a
+build raylib-verlet.exe: C_EXECUTABLE_LINKER__raylib-verlet_Debug CMakeFiles/raylib-verlet.dir/sources/main.c.obj | _deps/raylib-build/raylib/libraylib.a || _deps/raylib-build/raylib/external/glfw/src/glfw _deps/raylib-build/raylib/libraylib.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\verlet.dir
+  OBJECT_DIR = CMakeFiles\raylib-verlet.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\verlet.dir\
-  TARGET_FILE = verlet.exe
-  TARGET_IMPLIB = libverlet.dll.a
-  TARGET_PDB = verlet.pdb
+  TARGET_FILE = raylib-verlet.exe
+  TARGET_IMPLIB = libraylib-verlet.dll.a
+  TARGET_PDB = raylib-verlet.exe.dbg
 
 
 #############################################
@@ -295,8 +292,6 @@ build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj: C_COMPILER__r
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src -isystem D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
-  TARGET_PDB = _deps\raylib-build\raylib\libraylib.pdb
 
 build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj: C_COMPILER__raylib_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/rmodels.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
@@ -305,8 +300,6 @@ build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj: C_COMPILER_
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src -isystem D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
-  TARGET_PDB = _deps\raylib-build\raylib\libraylib.pdb
 
 build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj: C_COMPILER__raylib_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/rshapes.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
@@ -315,8 +308,6 @@ build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj: C_COMPILER_
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src -isystem D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
-  TARGET_PDB = _deps\raylib-build\raylib\libraylib.pdb
 
 build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj: C_COMPILER__raylib_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/rtext.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
@@ -325,8 +316,6 @@ build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj: C_COMPILER__r
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src -isystem D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
-  TARGET_PDB = _deps\raylib-build\raylib\libraylib.pdb
 
 build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj: C_COMPILER__raylib_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/rtextures.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
@@ -335,8 +324,6 @@ build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj: C_COMPILE
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src -isystem D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
-  TARGET_PDB = _deps\raylib-build\raylib\libraylib.pdb
 
 build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj: C_COMPILER__raylib_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/utils.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
@@ -345,8 +332,6 @@ build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj: C_COMPILER__r
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src -isystem D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
-  TARGET_PDB = _deps\raylib-build\raylib\libraylib.pdb
 
 build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj: C_COMPILER__raylib_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/raudio.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS
@@ -355,8 +340,6 @@ build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj: C_COMPILER__
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src -isystem D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
-  TARGET_PDB = _deps\raylib-build\raylib\libraylib.pdb
 
 
 # =============================================================================
@@ -371,9 +354,8 @@ build _deps/raylib-build/raylib/libraylib.a: C_STATIC_LIBRARY_LINKER__raylib_Deb
   OBJECT_DIR = _deps\raylib-build\raylib\CMakeFiles\raylib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\CMakeFiles\raylib.dir\raylib.pdb
   TARGET_FILE = _deps\raylib-build\raylib\libraylib.a
-  TARGET_PDB = _deps\raylib-build\raylib\libraylib.pdb
+  TARGET_PDB = raylib.a.dbg
 
 
 #############################################
@@ -579,8 +561,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -589,8 +569,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.obj
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -599,8 +577,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.ob
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -609,8 +585,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -619,8 +593,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -629,8 +601,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -639,8 +609,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -649,8 +617,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_contex
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -659,8 +625,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_con
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -669,8 +633,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -679,8 +641,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monit
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -689,8 +649,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_windo
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -699,8 +657,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joyst
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/win32_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -709,8 +665,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_modu
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -719,8 +673,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_time
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -729,8 +681,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_thre
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -739,8 +689,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_init
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -749,8 +697,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_joys
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -759,8 +705,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_moni
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -769,8 +713,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_wind
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -779,8 +721,6 @@ build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_contex
   INCLUDES = -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/include -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/external/glfw/src -ID:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\
-  TARGET_PDB = ""
 
 
 
@@ -901,11 +841,11 @@ build libraylib.a: phony _deps/raylib-build/raylib/libraylib.a
 
 build raylib: phony _deps/raylib-build/raylib/libraylib.a
 
+build raylib-verlet: phony raylib-verlet.exe
+
 build uninstall: phony _deps/raylib-build/uninstall
 
 build update_mappings: phony _deps/raylib-build/raylib/external/glfw/src/update_mappings
-
-build verlet: phony verlet.exe
 
 # =============================================================================
 # Folder targets.
@@ -915,7 +855,7 @@ build verlet: phony verlet.exe
 #############################################
 # Folder: D:/Intellij/Projects/raylib-verlet/cmake-build-debug
 
-build all: phony verlet.exe _deps/raylib-build/all
+build all: phony raylib-verlet.exe _deps/raylib-build/all
 
 # =============================================================================
 
@@ -971,14 +911,14 @@ build D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/CMakeFiles/cmake.ver
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/CMakeFiles/cmake.verify_globs | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CPack.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CPackComponent.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FetchContent.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FetchContent/CMakeLists.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindGit.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindOpenGL.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Templates/CPackConfig.cmake.in D$:/Intellij/Projects/raylib-verlet/CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/ParseConfigHeader.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/src/CMakeLists.txt
+build build.ninja: RERUN_CMAKE D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/CMakeFiles/cmake.verify_globs | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CPack.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CPackComponent.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FetchContent.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FetchContent/CMakeLists.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindGit.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindOpenGL.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Templates/CPackConfig.cmake.in D$:/Intellij/Projects/raylib-verlet/CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/ParseConfigHeader.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CPack.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CPackComponent.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FetchContent.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FetchContent/CMakeLists.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindGit.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindOpenGL.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Templates/CPackConfig.cmake.in D$:/Intellij/Projects/raylib-verlet/CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/ParseConfigHeader.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/src/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Intellij/Projects/raylib-verlet/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDependentOption.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CPack.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CPackComponent.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FetchContent.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FetchContent/CMakeLists.cmake.in D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindGit.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindOpenGL.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake D$:/Intellij/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Templates/CPackConfig.cmake.in D$:/Intellij/Projects/raylib-verlet/CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/ParseConfigHeader.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/src/CMakeLists.txt: phony
 
 
 #############################################

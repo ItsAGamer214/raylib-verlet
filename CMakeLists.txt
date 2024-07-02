@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(verlet C)
+project(raylib-verlet C)
 set(CMAKE_C_STANDARD 99)
 
 # Adding Raylib

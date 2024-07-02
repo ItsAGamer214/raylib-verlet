@@ -213,7 +213,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=verlet
+CMAKE_PROJECT_NAME:STATIC=raylib-verlet
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.4.0
@@ -407,6 +407,15 @@ USE_EXTERNAL_GLFW:STRING=OFF
 
 //Compile static library as position-independent code
 WITH_PIC:BOOL=OFF
+
+//Value Computed by CMake
+raylib-verlet_BINARY_DIR:STATIC=D:/Intellij/Projects/raylib-verlet/cmake-build-debug
+
+//Value Computed by CMake
+raylib-verlet_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+raylib-verlet_SOURCE_DIR:STATIC=D:/Intellij/Projects/raylib-verlet
 
 //Value Computed by CMake
 raylib_BINARY_DIR:STATIC=D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib

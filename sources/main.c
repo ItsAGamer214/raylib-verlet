@@ -1,6 +1,6 @@
 #define SCREEN_WIDTH 1000
 #define SCREEN_HEIGHT 1000
-#define WINDOW_TITLE "I love Verlet"
+#define WINDOW_TITLE "aniVerlet Solver"
 #define TARGET_FPS 120
 #define GRAVITY 600
 
@@ -30,7 +30,7 @@ int main(void)
     GRAV.x = 0;
     GRAV.y = GRAVITY;
 
-
+    const double dt = 0.008337f;
     while (!WindowShouldClose())
     {
         BeginDrawing();
@@ -48,15 +48,29 @@ int main(void)
         float radius = 20;
         Color color = {255, 255, 255, 255};
 
-
-        double dt = 0.008337f;
+        Vector2 field;
+        field.x = SCREEN_WIDTH / 2;
+        field.y = SCREEN_HEIGHT / 2;
+        if(IsMouseButtonDown(0)){
+            field.x = GetMouseX();
+            field.y = GetMouseY();
+        }
         //physics
-        for(int i = 0; i < NUM_OBJECTS; i++) {
-            V_accelerate(objList[i],GRAV);
-            V_updatePosition(objList[i], dt);
-            V_constrain(objList[i],V_BigCircle,SCREEN_HEIGHT / 2,radius);
-            V_checkCollide(objList[i],objList,NUM_OBJECTS,radius);
-            DrawCircleV(objList[i]->pos, radius, color);
+        int substeps = 3;
+        for(int j = 0; j < substeps; j++) {
+            for (int i = 0; i < NUM_OBJECTS; i++) {
+
+
+                //second param is a vector toward the center that is scaled.
+                //grav towards CENTER
+                V_accelerate(objList[i], Vector2Scale(Vector2Normalize(Vector2Subtract(field,objList[i]->pos)),600));
+
+                //V_accelerate(objList[i],GRAV);
+                V_updatePosition(objList[i], dt / substeps);
+                V_constrain(objList[i], V_BigCircle, SCREEN_HEIGHT / 2, radius);
+                V_checkCollide(objList[i], objList, NUM_OBJECTS, radius);
+                DrawCircleV(objList[i]->pos, radius, color);
+            }
         }
 
 

@@ -1,8 +1,8 @@
-# Install script for directory: D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src
+# Install script for directory: /home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/verlet")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,36 +39,36 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/Intellij/CLion 2024.1.4/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/libraylib.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/libraylib.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/raylib.h"
-    "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/rlgl.h"
-    "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/raymath.h"
+    "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/raylib.h"
+    "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/rlgl.h"
+    "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/raymath.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/raylib.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/raylib.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/raylib-config-version.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/raylib-config-version.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/../cmake/raylib-config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-src/src/../cmake/raylib-config.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/Intellij/Projects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake")
+  include("/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake")
 
 endif()
 

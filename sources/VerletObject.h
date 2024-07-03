@@ -11,7 +11,7 @@ typedef struct {
 }VerletObject;
 
 
-void V_updatePosition(VerletObject* obj, float dt) {
+void V_updatePosition(VerletObject* obj, double dt) {
 
     Vector2 velocity = Vector2Subtract(obj->pos, obj->pos_old);
     obj->pos_old = obj->pos;

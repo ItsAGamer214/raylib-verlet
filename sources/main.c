@@ -19,15 +19,17 @@ int main(void)
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_TITLE);
     SetTargetFPS(TARGET_FPS);
 
-    const int NUM_OBJECTS = 90;
+    const int NUM_OBJECTS = 100;
     VerletObject *objList[NUM_OBJECTS];
     for(int i = 0; i < NUM_OBJECTS; i++) {
         objList[i] = V_createObj((rand() % (SCREEN_WIDTH - 300) + 100), (rand() % (SCREEN_HEIGHT-300)+100));
+        //objList[i] = V_createObj(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
     }
 
     Vector2 GRAV;
     GRAV.x = 0;
     GRAV.y = GRAVITY;
+
 
     while (!WindowShouldClose())
     {
@@ -47,17 +49,23 @@ int main(void)
         Color color = {255, 255, 255, 255};
 
 
-
+        double dt = 0.008337f;
         //physics
         for(int i = 0; i < NUM_OBJECTS; i++) {
             V_accelerate(objList[i],GRAV);
-            V_updatePosition(objList[i], GetFrameTime());
+            V_updatePosition(objList[i], dt);
             V_constrain(objList[i],V_BigCircle,SCREEN_HEIGHT / 2,radius);
+            V_checkCollide(objList[i],objList,NUM_OBJECTS,radius);
+            DrawCircleV(objList[i]->pos, radius, color);
         }
+
+
+        /**
         for(int i = 0; i < NUM_OBJECTS; i++) {
             V_checkCollide(objList[i],objList,NUM_OBJECTS,radius);
             DrawCircleV(objList[i]->pos, radius, color);
         }
+         **/
         /** old code
         V_accelerate(objList[0],GRAV);
         V_updatePosition(objList[0], GetFrameTime());

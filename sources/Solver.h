@@ -3,7 +3,7 @@
 //
 #pragma once
 
-void V_constrain(VerletObject *obj, Vector2 center, float radiusConstr, float radiusSmall) {
+void V_constrain(VerletObject *obj, Vector2 center, double radiusConstr, double radiusSmall) {
 
     double dist = Vector2Distance(center, obj->pos);
     Vector2 to_obj = Vector2Subtract(obj->pos, center);
@@ -14,7 +14,7 @@ void V_constrain(VerletObject *obj, Vector2 center, float radiusConstr, float ra
     }
 }
 
-void V_checkCollide(VerletObject *curr, VerletObject *arr[], int numObjs, float radius) {
+void V_checkCollide(VerletObject *curr, VerletObject *arr[], int numObjs, double radius) {
 
     for(int i = 0; i < numObjs; i++) {
 
@@ -23,15 +23,15 @@ void V_checkCollide(VerletObject *curr, VerletObject *arr[], int numObjs, float 
 
             //if ur balls are a lil too jittery, make this shit lower.
             //lowering this makes collisions less clear, however.
-            const float V_Dampening = 0.4f;
+            const double V_Dampening = .5f;
             //calc distance between 2 objects
-            float dist = Vector2Distance(curr->pos, arr[i]->pos);
+            double dist = Vector2Distance(curr->pos, arr[i]->pos);
 
             //normalize vector FROM the other object to the one we are looking at.
             const Vector2 n = Vector2Scale(Vector2Subtract(curr->pos, arr[i]->pos), 1/dist);
 
             //reduce scale factor when adding.
-            const float delta = (radius * 2 - dist) * V_Dampening;
+            const double delta = (radius * 2 - dist) * V_Dampening;
 
             //add to the vector in the direction of the vector normalized, scaled by the scale factor
             curr -> pos = Vector2Add(curr -> pos,Vector2Scale(n,delta));

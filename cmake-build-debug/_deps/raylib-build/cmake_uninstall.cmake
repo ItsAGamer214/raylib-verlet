@@ -1,14 +1,14 @@
-if(NOT EXISTS "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: D:/Intellij/Projects/raylib-verlet/cmake-build-debug/install_manifest.txt")
+if(NOT EXISTS "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /home/ani/CLionProjects/raylib-verlet/cmake-build-debug/install_manifest.txt")
 endif()
 
-file(READ "D:/Intellij/Projects/raylib-verlet/cmake-build-debug/install_manifest.txt" files)
+file(READ "/home/ani/CLionProjects/raylib-verlet/cmake-build-debug/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")
   if(IS_SYMLINK "$ENV{DESTDIR}${file}" OR EXISTS "$ENV{DESTDIR}${file}")
     exec_program(
-      "D:/Intellij/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "/home/ani/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )

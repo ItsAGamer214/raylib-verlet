@@ -31,6 +31,9 @@ int main(void)
     GRAV.y = GRAVITY;
 
     const double dt = 0.008337f;
+    Vector2 field;
+    field.x = SCREEN_WIDTH / 2;
+    field.y = SCREEN_HEIGHT / 2;
     while (!WindowShouldClose())
     {
         BeginDrawing();
@@ -48,9 +51,7 @@ int main(void)
         float radius = 20;
         Color color = {255, 255, 255, 255};
 
-        Vector2 field;
-        field.x = SCREEN_WIDTH / 2;
-        field.y = SCREEN_HEIGHT / 2;
+
         if(IsMouseButtonDown(0)){
             field.x = GetMouseX();
             field.y = GetMouseY();
